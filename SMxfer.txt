@@ -1,0 +1,18 @@
+# Automatically abort script on errors
+option batch abort
+# Disable overwrite confirmations that conflict with the previous
+option confirm off
+# Connect
+open sftp://CDR_User:Dadmin.123@10.80.179.237/ -hostkey="ssh-rsa 2048 ssh-rsa 2048 5b:24:f8:9d:00:0f:39:86:17:e9:9d:76:b4:fe:ae:a9"
+# Change remote directory to root
+cd /
+# Force binary mode transfer
+option transfer binary
+# Download file to the local directory h:\SMCDR\
+get S00* "C:\tmp\avaya\DUMP\"
+#Delete downloaded files
+#rm S00*
+# Disconnect
+close
+# Exit WinSCP
+exit
