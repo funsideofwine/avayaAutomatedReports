@@ -3,7 +3,7 @@ option batch abort
 # Disable overwrite confirmations that conflict with the previous
 option confirm off
 # Connect
-open sftp://CDR_User:Dadmin.123@10.80.179.237/ -hostkey="ssh-rsa 2048 ssh-rsa 2048 5b:24:f8:9d:00:0f:39:86:17:e9:9d:76:b4:fe:ae:a9"
+open sftp://CDR_User:Dadmin.123@x.x.x.x/ -hostkey="ssh-rsa 2048 ssh-rsa 2048 xx:24:f8:9d:00:0f:39:86:17:e9:9d:xx:b4:fe:ae:a9"
 # Change remote directory to root
 cd /
 # Force binary mode transfer
